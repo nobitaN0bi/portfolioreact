@@ -1,0 +1,64 @@
+@import 'colors.css';
+
+
+body {
+    background-color: var(--dark-secondary);
+    color: white;
+  }
+
+@keyframes nerd-animation {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }  
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+
+.large-emoji {
+  display: inline-block;
+  animation-name: nerd-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  font-size: 10vh;
+  margin-right: 20px;
+}
+
+.small-emoji {
+  font-size: 1.2em;
+}
+
+
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-color: var(--dark-background);
+    color: var(--light-text);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 66%; /* Adjust this value to control the width of the content */
+  }
+  
+  .description {
+    flex-grow: 1;
+    text-align: justify;
+  }
+  
+  .large-emoji {
+    font-size: 20em;
+    margin-right: 5vw;
+  }

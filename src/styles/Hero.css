@@ -1,0 +1,59 @@
+/* styles/Hero.css */
+@import 'colors.css';
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust this value as needed */
+    padding: 1rem;
+    background-color: var(--dark-primary);
+    color: white;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero .cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--dark-highlight);
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px rgba(26, 23, 126, 0.5), -3px -3px 6px rgba(92, 107, 192, 0.5);
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .cta-button:hover {
+    background-color: var(--dark-secondary);
+  }
+  @keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }  
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  
+    100% { transform: rotate( 0.0deg) }
+  }
+  
+  .wave-emoji {
+    display: inline-block;
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+  }
+  .highlight-word {
+    color: red;
+  }
