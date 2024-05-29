@@ -1,0 +1,26 @@
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 0;
+    background-color: var(--dark-primary); /* Use the deep blue color for the background */
+    color: #ffffff; /* Set the text color to white for contrast */
+  }
+  
+  .typewriter {
+    overflow: hidden; /* Ensures the content is only shown within the .typewriter container */
+    border-right: .15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives it a margin */
+    letter-spacing: .15em; /* Adjusts the spacing between letters */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  
+
+  /* The typewriter cursor animation */
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+  }

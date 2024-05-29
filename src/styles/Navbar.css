@@ -1,0 +1,48 @@
+/* styles/Navbar.css */
+
+@import 'colors.css';
+
+.navbar {
+  position: fixed; /* Fix the navbar at the top of the page */
+  top: 0; /* Align the navbar with the top of the page */
+  width: 98%; /* Make the navbar span the full width of the page */
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--dark-primary);
+  border-radius: 15px;
+  box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--dark-highlight);
+  z-index: 100; /* Ensure the navbar is above other elements */
+}
+
+  .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .logo span {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: row;
+  }
+  .link {
+    display: block;
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 3px 3px 6px rgba(26, 23, 126, 0.125), -3px -3px 6px rgba(92, 107, 192, 0.125);
+  }
+  .link:hover {
+    color: var(--active-link);
+  }
+  
+  .link.active {
+    color: var(--active-link);
+  }
