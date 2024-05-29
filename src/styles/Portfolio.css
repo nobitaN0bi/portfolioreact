@@ -1,0 +1,47 @@
+
+/* Portfolio.css */
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-primary); /* Use the deep blue color for the body background */
+}
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    align-content: center;
+    min-height: 100vh;
+    max-width: 80vw;
+    gap: 20px;
+    padding: 20px;
+     /* Use the deep blue color for the portfolio grid background */
+}
+
+.project-box {
+    border: 1px solid var(--dark-secondary); /* Use the light blue color for the border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px var(--dark-shadow); /* Use the medium blue color for the box shadow */
+    background-color: var(--dark-primary); /* Use the indigo color for the project box background */
+    color: #ffffff; /* Set the text color to white for contrast */
+}
+
+.project-box h2 {
+    margin: 0 0 10px;
+    color: var(--dark-highlight); /* Use the light blue color for the title */
+}
+
+.project-box h3 {
+    margin: 0 0 10px;
+    font-size: 0.9em;
+    color: var(--dark-shadow); /* Use the medium blue color for the technologies */
+}
+
+.project-box p {
+    margin: 0 0 10px;
+    color: #ffffff; /* Set the text color to white for contrast */
+}

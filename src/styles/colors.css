@@ -1,0 +1,9 @@
+/* colors.css */
+
+:root {
+    --dark-primary: #020418;     /* deep blue */
+    --dark-secondary: #06125e;   /* indigo */
+    --dark-shadow: #1d223f;      /* medium blue */
+    --dark-highlight: #2d366b;   /* light blue */
+    --active-link: white;
+  }
