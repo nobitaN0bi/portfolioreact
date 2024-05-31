@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Portfolio.css';
-
+import Tile from './Tile';
 const Portfolio = () => {
   const projects = [
     {
@@ -57,18 +57,19 @@ const Portfolio = () => {
     },
   ];
   
+
   return (
     <div className="portfolio">
       {projects.map((project, index) => (
-        <div key={index} className="project-box">
-          <h2>{project.title}</h2>
-          <h3>{project.technologies}</h3>
-          <p>{project.description}</p>
-          <p>{project.date}</p>
-          {project.details && project.details.map((detail, i) => (
-            <p key={i}>{detail}</p>
-          ))}
-        </div>
+        <Tile 
+          key={index}
+          header={project.title}
+          subHeader={project.technologies}
+          text={project.description}
+          link="#" 
+          linkText="View Project"
+          position="left" 
+        />
       ))}
     </div>
   );

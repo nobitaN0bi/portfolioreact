@@ -1,11 +1,11 @@
 /* styles/Navbar.css */
 
-@import 'colors.css';
+@import './colors.css';
 
 .navbar {
-  position: fixed; /* Fix the navbar at the top of the page */
-  top: 0; /* Align the navbar with the top of the page */
-  width: 98%; /* Make the navbar span the full width of the page */
+  position: fixed; 
+  top: 0; 
+  width: 98%; 
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -15,6 +15,14 @@
   z-index: 100; /* Ensure the navbar is above other elements */
 }
 
+.progress-bar {
+  position: fixed;
+  top: 4rem; /* Same as the height of the navbar */
+  left: 0;
+  height: 4px;
+  background-color: #fff;
+  z-index: 1000;
+}
   .logo {
     display: flex;
     align-items: center;
@@ -26,23 +34,35 @@
     font-size: 1.5rem;
   }
   
+
   .links {
-    display: flex;
-    flex-direction: row;
-  }
-  .link {
-    display: block;
-    margin-left: 1rem;
-    color: white;
-    text-decoration: none;
-    border-radius: 15px;
-    padding: 10px;
-    box-shadow: 3px 3px 6px rgba(26, 23, 126, 0.125), -3px -3px 6px rgba(92, 107, 192, 0.125);
-  }
-  .link:hover {
-    color: var(--active-link);
-  }
-  
-  .link.active {
-    color: var(--active-link);
-  }
+  display: flex;
+  flex-direction: row;
+}
+
+.link {
+  display: block;
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 10px;
+box-shadow: 3px 3px 6px rgba(26, 23, 126, 0.125), -3px -3px 6px rgba(92, 107, 192, 0.125);
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: white;
+  transition: width 0.4s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.link:hover::after {
+  width: 100%;
+}

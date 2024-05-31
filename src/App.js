@@ -8,6 +8,8 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
 
+import ProgressBar from './components/ProgressBar';
+
 function App() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -19,6 +21,8 @@ function App() {
     <div className="App" onMouseMove={onMouseMove}>
       <div className="cursor" style={{ left: `${position.x}px`, top: `${position.y}px` }}></div>
       <Navbar />
+      <ProgressBar /> 
+      
       <div id="hero">
         <Hero />
       </div>

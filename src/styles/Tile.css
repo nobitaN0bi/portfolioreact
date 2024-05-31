@@ -1,0 +1,20 @@
+.tile {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.1), 
+                5px 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    color: #fff;
+    .tile {
+        /* Add other styles as needed */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.text {
+    /* Add other styles as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+}

@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
+
     padding: 0;
     background-color: var(--dark-primary); /* Use the deep blue color for the body background */
 }
@@ -15,6 +15,7 @@
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     align-content: center;
     min-height: 100vh;
+    margin: calc(10vw - 10%);
     max-width: 80vw;
     gap: 20px;
     padding: 20px;
