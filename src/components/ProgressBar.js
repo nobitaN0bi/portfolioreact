@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../styles/Navbar.css';
+import '../styles/Progressbar.css';
 
 function ProgressBar() {
     const [scroll, setScroll] = useState(0);

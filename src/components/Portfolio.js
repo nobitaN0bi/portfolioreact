@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Portfolio.css';
 import Tile from './Tile';
+
 const Portfolio = () => {
   const projects = [
     {
@@ -24,6 +25,7 @@ const Portfolio = () => {
         'Conducted hypothesis tests including T-Test, Chi-Square Test, ANOVA Test, and Correlation Test.',
         'Analyzed the effect of weather conditions on the choice of season.',
       ],
+      img: `${process.env.PUBLIC_URL}/Screenshot from 2024-06-07 12-46-24.png`,
     },
     {
       title: 'Event Management System Backend',
@@ -44,6 +46,7 @@ const Portfolio = () => {
         'Developed a tool for pixel-wise image processing operations.',
         'Implemented features like grayscale conversion, adjustments, flipping, rotation, blur, filters, and upscaling.',
       ],
+      img: `${process.env.PUBLIC_URL}/WhatsApp Image 2024-06-07 at 12.58.23 PM.jpeg`
     },
     {
       title: 'Apple Clone Site',
@@ -66,6 +69,7 @@ const Portfolio = () => {
           header={project.title}
           subHeader={project.technologies}
           text={project.description}
+          img={project.img}
           link="#" 
           linkText="View Project"
           position="left" 

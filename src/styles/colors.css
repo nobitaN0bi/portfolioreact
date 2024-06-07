@@ -1,9 +1,17 @@
 /* colors.css */
 
 :root {
-    --dark-primary: #020418;     /* deep blue */
-    --dark-secondary: #06125e;   /* indigo */
-    --dark-shadow: #1d223f;      /* medium blue */
-    --dark-highlight: #2d366b;   /* light blue */
-    --active-link: white;
-  }
+  --dark-primary: #020418;     /* deep blue */
+  --dark-secondary: #06125e;   /* indigo */
+  --dark-shadow: #1d223f;      /* medium blue */
+  --dark-highlight: #2d366b;   /* light blue */
+  --active-link: white;
+}
+
+.light-theme {
+  --dark-primary: #dfe0e2;     /* light gray */
+  --dark-secondary: #a2a4a6;   /* medium gray */
+  --dark-shadow: #6f7072;      /* dark gray */
+  --dark-highlight: #3c3e40;   /* very dark gray */
+  --active-link: black;
+}
