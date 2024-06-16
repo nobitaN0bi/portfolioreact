@@ -21,7 +21,12 @@
     padding: 20px;
      /* Use the deep blue color for the portfolio grid background */
 }
-
+#portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This will make the div take the full viewport height */
+}
 .project-box {
     border: 1px solid var(--dark-secondary); /* Use the light blue color for the border */
     border-radius: 10px;

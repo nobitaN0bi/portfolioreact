@@ -9,6 +9,7 @@
     background-color: var(--dark-background);
     color: white;
     font-family: 'Arial', sans-serif;
+    font-size: large;
   }
   
   .skill-section {
