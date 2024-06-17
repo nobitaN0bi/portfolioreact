@@ -15,6 +15,8 @@ const Portfolio = () => {
         'Designed to improve user experience by providing quick and accurate responses to medical queries.',
         'Scalability: Pinecone allows for easy scaling to handle large volumes of data and user requests.',
       ],
+      img: `${process.env.PUBLIC_URL}/image (1).png` ,
+      
     },
     {
       title: 'Yulu Data Analysis',
@@ -36,6 +38,7 @@ const Portfolio = () => {
         'Developed RESTful API for event details, participants, venues, and organizer profiles.',
         'Maintained data integrity and added logging for debugging and usage tracking.',
       ],
+      img: `${process.env.PUBLIC_URL}/image (2).png`
     },
     {
       title: 'Image Editor using Java',
@@ -46,7 +49,7 @@ const Portfolio = () => {
         'Developed a tool for pixel-wise image processing operations.',
         'Implemented features like grayscale conversion, adjustments, flipping, rotation, blur, filters, and upscaling.',
       ],
-      img: `${process.env.PUBLIC_URL}/WhatsApp Image 2024-06-07 at 12.58.23 PM.jpeg`
+      img: `${process.env.PUBLIC_URL}/WhatsApp Image 2024-06-07 at 12.58.23 PM.jpeg` ,
     },
     {
       title: 'Apple Clone Site',
@@ -56,7 +59,8 @@ const Portfolio = () => {
       details:[
         'loremipsum',
         'hehe'
-      ]
+      ],
+      img: `${process.env.PUBLIC_URL}/Screenshot from 2024-06-17 17-50-14.png` ,
     },
   ];
   
@@ -70,7 +74,7 @@ const Portfolio = () => {
           subHeader={project.technologies}
           text={project.description}
           img={project.img}
-          link="#" 
+          link={project.repo}
           linkText="View Project"
           position="left" 
         />
